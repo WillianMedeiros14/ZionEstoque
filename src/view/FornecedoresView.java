@@ -53,6 +53,7 @@ public class FornecedoresView extends JFrame {
 	 * Create the frame.
 	 */
 	public FornecedoresView() {
+		setResizable(false);
 		addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowOpened(WindowEvent e) {

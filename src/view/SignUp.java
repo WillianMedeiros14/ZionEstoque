@@ -41,6 +41,7 @@ public class SignUp extends JFrame {
 	 * Create the frame.
 	 */
 	public SignUp() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1015, 675);
 		contentPane = new JPanel();

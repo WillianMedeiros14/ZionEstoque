@@ -59,6 +59,8 @@ public class ModalFornecedor extends JDialog {
 	 * Create the dialog.
 	 */
 	public ModalFornecedor() {
+		setResizable(false);
+		setModal(true);
 		setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
 		getContentPane().setForeground(new Color(255, 255, 255));
 		setBounds(100, 100, 560, 647);
@@ -128,7 +130,7 @@ public class ModalFornecedor extends JDialog {
 						fornecedor_crud.cadastrar(fornecedor);
 						JOptionPane.showMessageDialog(null, "Cadastro"
 								+ " realizado com sucesso!!!");
-						
+						fornecedoresView.setLocationRelativeTo(null);
 						fornecedoresView.setVisible(true);
 						setVisible(false);
 					}else {
@@ -136,7 +138,7 @@ public class ModalFornecedor extends JDialog {
 						fornecedor_crud.alterar(fornecedor);
 						JOptionPane.showMessageDialog(null, "Cadastro"
 								+ " alterado com sucesso!!!");
-						
+						fornecedoresView.setLocationRelativeTo(null);
 						fornecedoresView.setVisible(true);
 						setVisible(false);
 					}
@@ -210,6 +212,7 @@ public class ModalFornecedor extends JDialog {
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				FornecedoresView fornecedoresView = new FornecedoresView();
+				fornecedoresView.setLocationRelativeTo(null);
 				fornecedoresView.setVisible(true);
 				setVisible(false);
 			}
