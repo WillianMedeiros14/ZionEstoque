@@ -27,9 +27,7 @@ public class connectionDB {
 			
 			String user = "SYSDBA";
 			String senha = "masterkey";
-			
-			System.out.println(Url);
-			
+
 			connection = DriverManager.getConnection(Url, user, senha);
 		
 			if (connection != null) {

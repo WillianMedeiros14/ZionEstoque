@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class HomeView extends JFrame {
 
@@ -67,6 +69,14 @@ public class HomeView extends JFrame {
 		btnProdutos.setBounds(836, 53, 161, 32);
 		
 		panel.add(btnProdutos);
+		btnFornecedores.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				FornecedoresView fornecedoresView = new FornecedoresView();
+				fornecedoresView.setLocationRelativeTo(null);
+				setVisible(false);
+				fornecedoresView.setVisible(true);
+			}
+		});
 		btnFornecedores.setForeground(Color.WHITE);
 		btnFornecedores.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnFornecedores.setFocusPainted(false);
