@@ -27,6 +27,13 @@ $ execute a aplicação pela tela MainView que fica localizada no caminho: ZionE
 
 ```
 
+## 😀 Autores
+
+- Jerlan Pereira Arcanjo;
+- Luiz Eduardo da Costa Almeida;
+- Willian Breno Barros Nascimento;
+- Willian da Silva Medeiros.
+
 ## 🚀 Tecnologias ultilizadas
 
 - Linguagem Java;
